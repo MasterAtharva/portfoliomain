@@ -3,76 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atharva Vedpathak - AI & Data Science Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Atharva Vedpathak - Ethical Hacker & AI Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="animated-bg">
-        <div class="particle" style="--i:1"></div>
-        <div class="particle" style="--i:2"></div>
-        <div class="particle" style="--i:3"></div>
-        <div class="particle" style="--i:4"></div>
-        <div class="particle" style="--i:5"></div>
-        <div class="particle" style="--i:6"></div>
-        <div class="particle" style="--i:7"></div>
-        <div class="particle" style="--i:8"></div>
-    </div>
-
-    <!-- Floating Social Media -->
-    <div class="social-float">
-        <a href="https://linkedin.com/in/atharvavedpathak" target="_blank" class="social-link" data-platform="linkedin">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/atharvavedpathak" target="_blank" class="social-link" data-platform="github">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://instagram.com/atharvavedpathak" target="_blank" class="social-link" data-platform="instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com/atharvavedpathak" target="_blank" class="social-link" data-platform="twitter">
-            <i class="fab fa-twitter"></i>
-        </a>
-    </div>
-
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">
-                    <span class="logo-text">Atharva Vedpathak</span>
-                    <span class="logo-glow"></span>
-                </a>
+                <a href="#home">>&nbsp;atharva.exe</a>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link" aria-label="Home section">home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#about" class="nav-link" aria-label="About section">about</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#skills" class="nav-link" aria-label="Skills section">skills</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#education" class="nav-link" aria-label="Education section">education</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#projects" class="nav-link" aria-label="Projects section">projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#experience" class="nav-link" aria-label="Experience section">experience</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#certifications" class="nav-link">Certifications</a>
+                    <a href="#certifications" class="nav-link" aria-label="Certifications section">certifications</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#activities" class="nav-link">Activities</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link" aria-label="Contact section">contact</a>
                 </li>
             </ul>
             <div class="nav-toggle" id="mobile-menu">
@@ -85,44 +50,32 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <canvas id="matrix-canvas"></canvas>
         <div class="hero-content">
-            <div class="hero-title-container">
-                <h1 class="hero-title">
-                    <span class="typing-text" id="typing-text"></span>
-                    <span class="cursor">|</span>
-                </h1>
-                <div class="holographic-effect"></div>
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </span>
+                    <span class="terminal-title">terminal</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="prompt">root@atharva:~$</span>
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor">_</span>
+                    </div>
+                    <div class="terminal-subtitle">
+                        <span class="prompt">></span> ethical hacking & ai | data science
+                    </div>
+                </div>
             </div>
-            <p class="hero-subtitle fade-in">Engineering the Future with AI & Data Science</p>
-            <div class="hero-buttons fade-in">
-                <a href="#projects" class="btn btn--neon btn--primary">
-                    <span>Explore My Work</span>
-                    <div class="btn-glow"></div>
-                </a>
-                <a href="#contact" class="btn btn--neon btn--outline">
-                    <span>Get In Touch</span>
-                    <div class="btn-glow"></div>
-                </a>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn--primary">view_projects.sh</a>
+                <a href="#" class="btn btn--outline" id="download-resume">download_resume.pdf</a>
             </div>
-            <div class="hero-social fade-in">
-                <a href="https://linkedin.com/in/atharvavedpathak" target="_blank" class="hero-social-link">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/atharvavedpathak" target="_blank" class="hero-social-link">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://instagram.com/atharvavedpathak" target="_blank" class="hero-social-link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com/atharvavedpathak" target="_blank" class="hero-social-link">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </div>
-        <div class="hero-geometric">
-            <div class="geometric-shape shape-1"></div>
-            <div class="geometric-shape shape-2"></div>
-            <div class="geometric-shape shape-3"></div>
         </div>
     </section>
 
@@ -130,33 +83,19 @@
     <section id="about" class="section about">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="title-text">About Me</span>
-                <div class="title-glow"></div>
+                <span class="prompt">></span> about_me.txt
             </h2>
-            <div class="about-card glass-morphism reveal">
-                <div class="about-content">
-                    <p class="about-text">
-                        Engineering student with a strong interest in IT support and cybersecurity. Skilled in handling hardware/software issues, managing user systems, and documenting processes. Quick learner with hands-on experience through academic projects and club leadership. 
-                    </p>
-                    <p class="about-text">
-                        Passionate about cybersecurity with leadership experience through Cyber Khoj Club. Currently pursuing B.E. in Artificial Intelligence & Data Science, combining technical expertise with innovative problem-solving approaches.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Projects</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">8.27</span>
-                            <span class="stat-label">CGPA</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">1+</span>
-                            <span class="stat-label">Experience</span>
-                        </div>
-                    </div>
+            <div class="terminal-card reveal">
+                <div class="terminal-header">
+                    <span class="terminal-title">about_atharva.txt</span>
                 </div>
-                <div class="about-glow"></div>
+                <div class="terminal-content">
+                    <p>Engineering student with a strong interest in IT support and cybersecurity. Skilled in handling hardware/software issues, managing user systems, and documenting processes. Quick learner with hands-on experience through academic projects and club leadership. Passionate about cybersecurity with leadership experience through Cyber Khoj Club.</p>
+                    <br>
+                    <p><span class="highlight">Contact:</span></p>
+                    <p>Email: atharvav.official@gmail.com</p>
+                    <p>Phone: 9168320316</p>
+                </div>
             </div>
         </div>
     </section>
@@ -165,39 +104,174 @@
     <section id="skills" class="section skills">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="title-text">Technical Arsenal</span>
-                <div class="title-glow"></div>
+                <span class="prompt">></span> skills.json
             </h2>
             <div class="skills-container">
-                <div class="skills-category reveal">
-                    <h3 class="category-title">Programming</h3>
+                <div class="skill-category reveal">
+                    <h3 class="category-title">Languages</h3>
                     <div class="skills-grid">
-                        <div class="skill-hex" data-skill="Python" data-percentage="85"></div>
-                        <div class="skill-hex" data-skill="HTML" data-percentage="90"></div>
-                        <div class="skill-hex" data-skill="CSS" data-percentage="85"></div>
-                        <div class="skill-hex" data-skill="SQL" data-percentage="80"></div>
-                        <div class="skill-hex" data-skill="C++" data-percentage="75"></div>
-                        <div class="skill-hex" data-skill="Java" data-percentage="70"></div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="85"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="skills-category reveal">
+
+                <div class="skill-category reveal">
                     <h3 class="category-title">Data Analysis</h3>
                     <div class="skills-grid">
-                        <div class="skill-hex" data-skill="Pandas" data-percentage="80"></div>
-                        <div class="skill-hex" data-skill="NumPy" data-percentage="80"></div>
-                        <div class="skill-hex" data-skill="Matplotlib" data-percentage="75"></div>
-                        <div class="skill-hex" data-skill="Seaborn" data-percentage="75"></div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Pandas</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">NumPy</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Matplotlib</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Seaborn</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="75"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="skills-category reveal">
-                    <h3 class="category-title">Cloud & Tools</h3>
+
+                <div class="skill-category reveal">
+                    <h3 class="category-title">Databases & Tools</h3>
                     <div class="skills-grid">
-                        <div class="skill-hex" data-skill="AWS" data-percentage="75"></div>
-                        <div class="skill-hex" data-skill="MySQL" data-percentage="80"></div>
-                        <div class="skill-hex" data-skill="VS Code" data-percentage="75"></div>
-                        <div class="skill-hex" data-skill="Windows" data-percentage="90"></div>
-                        <div class="skill-hex" data-skill="Linux" data-percentage="75"></div>
-                        <div class="skill-hex" data-skill="macOS" data-percentage="60"></div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Visual Studio</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3 class="category-title">Operating Systems</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Windows</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Linux</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">macOS</span>
+                                <span class="skill-percentage">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="60"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -208,38 +282,36 @@
     <section id="education" class="section education">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="title-text">Academic Journey</span>
-                <div class="title-glow"></div>
+                <span class="prompt">></span> education.log
             </h2>
-            <div class="education-timeline">
-                <div class="timeline-item glass-morphism reveal">
-                    <div class="timeline-year">2025</div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-bullet"></div>
+                    <div class="timeline-date">2025</div>
                     <div class="timeline-content">
                         <h3>B.E. - Artificial Intelligence & Data Science</h3>
-                        <p class="institution">Ajeenkya DY Patil School of Engineering</p>
-                        <p class="grade">CGPA: 8.27/10</p>
+                        <p>Ajeenkya DY Patil School of Engineering</p>
+                        <span class="grade">CGPA: 8.27/10</span>
                     </div>
-                    <div class="timeline-glow"></div>
                 </div>
-                <div class="timeline-item glass-morphism reveal">
-                    <div class="timeline-year">2021</div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-bullet"></div>
+                    <div class="timeline-date">2021</div>
                     <div class="timeline-content">
                         <h3>12th | MSBSHSE</h3>
-                        <p class="institution">Dnyansamwardhini Junior College, Shirwal</p>
-                        <p class="grade">88%</p>
+                        <p>Dnyansamwardhini Junior College, Shirwal</p>
+                        <span class="grade">88%</span>
                     </div>
-                    <div class="timeline-glow"></div>
                 </div>
-                <div class="timeline-item glass-morphism reveal">
-                    <div class="timeline-year">2019</div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-bullet"></div>
+                    <div class="timeline-date">2019</div>
                     <div class="timeline-content">
                         <h3>10th | MSBSHSE</h3>
-                        <p class="institution">Dnyansamwardhini Junior College, Shirwal</p>
-                        <p class="grade">92.40%</p>
+                        <p>Dnyansamwardhini Junior College, Shirwal</p>
+                        <span class="grade">92.40%</span>
                     </div>
-                    <div class="timeline-glow"></div>
                 </div>
-                <div class="timeline-connector"></div>
             </div>
         </div>
     </section>
@@ -248,57 +320,65 @@
     <section id="projects" class="section projects">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="title-text">Innovation Portfolio</span>
-                <div class="title-glow"></div>
+                <span class="prompt">></span> projects.exe
             </h2>
             <div class="projects-grid">
-                <div class="project-card glass-morphism reveal">
-                    <div class="project-header">
+                <div class="project-card reveal" data-flip="false">
+                    <div class="project-front">
                         <h3 class="project-title">Reviving Ancient Glory</h3>
-                        <span class="project-status current">Current</span>
+                        <p class="project-status">Current</p>
+                        <p class="project-description">Built a generative AI system to restore damaged or missing regions in historical images using fine-tuned Stable Diffusion XL with ControlNet guidance and LoRA optimization.</p>
+                        <div class="flip-indicator">Click to view skills →</div>
                     </div>
-                    <p class="project-description">
-                        Built a generative AI system to restore damaged or missing regions in historical images using fine-tuned Stable Diffusion XL with ControlNet guidance and LoRA optimization.
-                    </p>
-                    <div class="project-skills">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">Gradio</span>
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">Diffusers</span>
-                        <span class="skill-tag">ControlNet</span>
-                        <span class="skill-tag">LoRA</span>
-                        <span class="skill-tag">SDXL</span>
+                    <div class="project-back">
+                        <h3 class="project-title">Skills Used</h3>
+                        <div class="project-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Gradio</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">Diffusers</span>
+                            <span class="skill-tag">ControlNet</span>
+                            <span class="skill-tag">LaMa</span>
+                            <span class="skill-tag">LoRA</span>
+                            <span class="skill-tag">SDXL</span>
+                        </div>
+                        <div class="flip-indicator">← Click to go back</div>
                     </div>
-                    <div class="project-glow"></div>
                 </div>
-                <div class="project-card glass-morphism reveal">
-                    <div class="project-header">
+
+                <div class="project-card reveal" data-flip="false">
+                    <div class="project-front">
                         <h3 class="project-title">Attendance System Using RFID</h3>
+                        <p class="project-description">Developed an RFID-based attendance system for automated attendance tracking, reducing errors and saving time. It offers real-time data processing, automated notifications, and comprehensive reporting.</p>
+                        <div class="flip-indicator">Click to view skills →</div>
                     </div>
-                    <p class="project-description">
-                        Developed an RFID-based attendance system for automated attendance tracking, reducing errors and saving time with real-time data processing and comprehensive reporting.
-                    </p>
-                    <div class="project-skills">
-                        <span class="skill-tag">IoT</span>
-                        <span class="skill-tag">Arduino</span>
-                        <span class="skill-tag">RFID</span>
+                    <div class="project-back">
+                        <h3 class="project-title">Skills Used</h3>
+                        <div class="project-skills">
+                            <span class="skill-tag">IoT</span>
+                            <span class="skill-tag">Arduino</span>
+                            <span class="skill-tag">RFID</span>
+                        </div>
+                        <div class="flip-indicator">← Click to go back</div>
                     </div>
-                    <div class="project-glow"></div>
                 </div>
-                <div class="project-card glass-morphism reveal">
-                    <div class="project-header">
-                        <h3 class="project-title">Facial Recognition Attendance</h3>
+
+                <div class="project-card reveal" data-flip="false">
+                    <div class="project-front">
+                        <h3 class="project-title">Attendance using Facial Recognition</h3>
+                        <p class="project-description">Implemented a face recognition attendance system using advanced AI for real-time, accurate tracking, reducing manual effort and enhancing reporting, with seamless database integration and robust security.</p>
+                        <div class="flip-indicator">Click to view skills →</div>
                     </div>
-                    <p class="project-description">
-                        Implemented a face recognition attendance system using advanced AI for real-time, accurate tracking with seamless database integration and robust security.
-                    </p>
-                    <div class="project-skills">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Face Recognition</span>
-                        <span class="skill-tag">OpenCV</span>
+                    <div class="project-back">
+                        <h3 class="project-title">Skills Used</h3>
+                        <div class="project-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Face Recognition</span>
+                            <span class="skill-tag">OpenCV</span>
+                        </div>
+                        <div class="flip-indicator">← Click to go back</div>
                     </div>
-                    <div class="project-glow"></div>
                 </div>
             </div>
         </div>
@@ -308,19 +388,16 @@
     <section id="experience" class="section experience">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="title-text">Professional Experience</span>
-                <div class="title-glow"></div>
+                <span class="prompt">></span> experience.sh
             </h2>
-            <div class="experience-grid">
-                <div class="experience-card glass-morphism reveal">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Trainee Web Developer</h3>
-                        <p class="experience-company">Aller Technologies PVT. LTD.</p>
-                        <span class="experience-type">IT / Computers - Software</span>
-                    </div>
-                    <p class="experience-description">
-                        The project on creating an inventory management system involves building a user-friendly platform to efficiently track and manage stock levels, sales, and orders in real time.
-                    </p>
+            <div class="experience-card reveal">
+                <div class="terminal-header">
+                    <span class="terminal-title">trainee_web_developer.log</span>
+                </div>
+                <div class="terminal-content">
+                    <h3>Trainee Web Developer</h3>
+                    <p class="company">Aller Technologies PVT. LTD.</p>
+                    <p class="description">Built an inventory management system to track stock levels, sales, and orders in real time.</p>
                     <div class="experience-skills">
                         <span class="skill-tag">HTML</span>
                         <span class="skill-tag">CSS</span>
@@ -330,7 +407,6 @@
                         <span class="skill-tag">Django</span>
                         <span class="skill-tag">MySQL</span>
                     </div>
-                    <div class="experience-glow"></div>
                 </div>
             </div>
         </div>
@@ -340,57 +416,28 @@
     <section id="certifications" class="section certifications">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="title-text">Digital Badges</span>
-                <div class="title-glow"></div>
+                <span class="prompt">></span> certifications.txt
             </h2>
             <div class="certifications-grid">
-                <div class="cert-badge glass-morphism reveal">
-                    <div class="cert-icon">
-                        <i class="fab fa-java"></i>
-                    </div>
-                    <h4 class="cert-title">Java (Basics)</h4>
-                    <p class="cert-provider">HackerRank</p>
-                    <div class="cert-glow"></div>
+                <div class="cert-item reveal">
+                    <span class="check-icon">✓</span>
+                    <span>Java (Basics) - HackerRank</span>
                 </div>
-                <div class="cert-badge glass-morphism reveal">
-                    <div class="cert-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h4 class="cert-title">SQL</h4>
-                    <p class="cert-provider">HackerRank</p>
-                    <div class="cert-glow"></div>
+                <div class="cert-item reveal">
+                    <span class="check-icon">✓</span>
+                    <span>SQL - HackerRank</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Activities Section -->
-    <section id="activities" class="section activities">
-        <div class="container">
-            <h2 class="section-title reveal">
-                <span class="title-text">Beyond Code</span>
-                <div class="title-glow"></div>
-            </h2>
+            <h3 class="activities-title reveal">Activities</h3>
             <div class="activities-grid">
-                <div class="activity-card glass-morphism reveal">
-                    <div class="activity-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 class="activity-title">Cyber Khoj Club | Vice-President</h3>
-                    <p class="activity-description">
-                        Led awareness campaigns during Cyber Jagrukta Diwas, promoting safe digital practices. Organized tech talks and workshops on cybersecurity basics for students.
-                    </p>
-                    <div class="activity-glow"></div>
+                <div class="activity-card reveal">
+                    <h4>Cyber Khoj Club | Vice-President</h4>
+                    <p>Led security awareness campaigns during Cyber Jagrukta Diwas and organized tech talks & workshops on cybersecurity.</p>
                 </div>
-                <div class="activity-card glass-morphism reveal">
-                    <div class="activity-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3 class="activity-title">Dance Competition</h3>
-                    <p class="activity-description">
-                        Runner up College Dance Competition
-                    </p>
-                    <div class="activity-glow"></div>
+                <div class="activity-card reveal">
+                    <h4>Dance Competition</h4>
+                    <p>Runner up in College Dance Competition.</p>
                 </div>
             </div>
         </div>
@@ -400,61 +447,25 @@
     <section id="contact" class="section contact">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="title-text">Initiate Contact</span>
-                <div class="title-glow"></div>
+                <span class="prompt">></span> contact.sh
             </h2>
-            <div class="contact-content">
-                <div class="contact-info reveal">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+            <div class="contact-container">
+                <form class="contact-form reveal" id="contact-form">
+                    <div class="terminal-header">
+                        <span class="terminal-title">send_message.sh</span>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Enter your name..." required>
                         </div>
-                        <div class="contact-text">
-                            <span class="contact-label">Email</span>
-                            <a href="mailto:atharvav.official@gmail.com">atharvav.official@gmail.com</a>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Enter your email..." required>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
                         </div>
-                        <div class="contact-text">
-                            <span class="contact-label">Phone</span>
-                            <a href="tel:+919168320316">+91 9168320316</a>
-                        </div>
+                        <button type="submit" class="btn btn--primary">execute_send.sh</button>
                     </div>
-                    <div class="contact-social">
-                        <a href="https://linkedin.com/in/atharvavedpathak" target="_blank" class="contact-social-link">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/atharvavedpathak" target="_blank" class="contact-social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://instagram.com/atharvavedpathak" target="_blank" class="contact-social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://twitter.com/atharvavedpathak" target="_blank" class="contact-social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-                <form class="contact-form glass-morphism reveal" id="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        <div class="input-glow"></div>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        <div class="input-glow"></div>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                        <div class="input-glow"></div>
-                    </div>
-                    <button type="submit" class="btn btn--neon btn--primary">
-                        <span>Transmit Message</span>
-                        <div class="btn-glow"></div>
-                    </button>
                 </form>
             </div>
         </div>
@@ -463,23 +474,33 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Atharva Vedpathak. Engineered with passion.</p>
-                <div class="footer-social">
-                    <a href="https://linkedin.com/in/atharvavedpathak" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/atharvavedpathak" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://instagram.com/atharvavedpathak" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com/atharvavedpathak" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/atharvavedpathak" target="_blank" class="social-link" aria-label="LinkedIn Profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="https://github.com/atharvavedpathak" target="_blank" class="social-link" aria-label="GitHub Profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+                <a href="https://instagram.com/atharvavedpathak" target="_blank" class="social-link" aria-label="Instagram Profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/atharvavedpathak" target="_blank" class="social-link" aria-label="Twitter Profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                    </svg>
+                </a>
             </div>
+            <p>&copy; 2025 Atharva Vedpathak. All rights reserved. | Ethical Hacker & AI Specialist</p>
         </div>
     </footer>
 
